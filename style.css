@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Timeless Seats LLC – Crafted to Last Generations</title>
+    <meta name="description" content="Timeless Seats LLC – Durable, elegant furniture and antiques. Made to stand the test of time. Local pickup in Canton, Michigan."/>
+    
+    <!-- Snipcart (for ecommerce) - Replace YOUR_SNIPCART_API_KEY -->
+    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY"></div>
+    <link href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" rel="stylesheet" />
+
+    <style>
+        /* Your existing :root and styles here – unchanged, just adding a few */
+        .llc-badge {
+            font-size: 0.9rem;
+            color: var(--color-accent);
+            font-weight: bold;
+            margin-left: 0.5rem;
+        }
+        .product-price {
+            font-size: 1.4rem;
+            color: var(--color-accent);
+            margin: 1rem 0;
+        }
+        .buy-btn {
+            background: var(--color-accent);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        .buy-btn:hover {
+            background: #6b5438;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Timeless Seats<span class="llc-badge">LLC</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#shop">Shop</a></li> <!-- New -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Timeless Seats LLC</h1>
+        <p class="tagline">Furniture & Antiques to Last Generations. Enduring. Elegant.</p>
+        <a href="#shop" class="btn">Shop Collection</a>
+    </header>
+
+    <!-- New Shop Section with Ecommerce -->
+    <section id="shop" style="background:#f8f5f0;">
+        <h2>Shop Our Collection</h2>
+        <p class="subtitle">Hand-selected antiques and heirloom-quality pieces. Local pickup in Canton, MI or fast shipping available.</p>
+
+        <div class="grid">
+            <!-- Example Product 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800" alt="Classic walnut dining chair">
+                <div class="card-content">
+                    <h3>Antique Walnut Dining Chair (Set of 4)</h3>
+                    <p class="product-price">$1,200</p>
+                    <p>Golden age craftsmanship. Solid walnut, restored to perfection.</p>
+                    <button class="buy-btn snipcart-add-item"
+                        data-item-id="antique-chair-set"
+                        data-item-price="1200.00"
+                        data-item-url="/shop"
+                        data-item-name="Antique Walnut Dining Chair Set"
+                        data-item-description="Set of 4 restored walnut chairs"
+                        data-item-image="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Example Product 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80&w=800" alt="Upholstered lounge chair">
+                <div class="card-content">
+                    <h3>Vintage Upholstered Lounge Chair</h3>
+                    <p class="product-price">$850</p>
+                    <p>Timeless comfort in premium leather.</p>
+                    <button class="buy-btn snipcart-add-item"
+                        data-item-id="lounge-chair"
+                        data-item-price="850.00"
+                        data-item-url="/shop"
+                        data-item-name="Vintage Upholstered Lounge Chair"
+                        data-item-description="Single vintage lounge chair, reupholstered"
+                        data-item-image="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80&w=800">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Add more products similarly. For variants (e.g., colors), use data-item-custom1-name="Finish" etc. -->
+        </div>
+
+        <!-- Cart button (Snipcart shows mini-cart) -->
+        <div style="text-align:center; margin:3rem 0;">
+            <button class="snipcart-checkout btn" style="font-size:1.3rem; padding:16px 48px;">View Cart & Checkout</button>
+        </div>
+    </section>
+
+    <!-- Your existing #collection can stay or merge into #shop -->
+
+    <section id="about">
+        <!-- ... unchanged, but update title to Timeless Seats LLC -->
+        <h2>About Timeless Seats LLC</h2>
+        <!-- ... rest unchanged -->
+    </section>
+
+    <section id="contact">
+        <!-- ... unchanged -->
+    </section>
+
+    <footer>
+        <p>© 2026 Timeless Seats LLC. All rights reserved. Michigan Registered LLC.</p>
+        <p style="margin-top:1rem; font-size:0.95rem;">
+            <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+        </p>
+        <!-- Optional: Add small LLC badge image here if you create one -->
+    </footer>
+
+</body>
+</html>
